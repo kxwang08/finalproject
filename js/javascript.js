@@ -12,6 +12,8 @@ function myFunction() {
 document.cookie = "cookieName=value; SameSite=None; Secure";
 
 
+
+
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
