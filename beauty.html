@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        
+    <title>Beauty</title>
+</head>
+<body>
+    <a href = "#main-content" class="skip">Skip to Main Content</a>
+    <header>
+
+        <nav>
+            <div class="topnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <script src="js/javascript.js"></script>
+                <div id="myLinks">
+                    <ul class="nav-item nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href= "fashion.html">Fashion</a></li>
+                        <li><a href= "beauty.html" class="active" >Beauty</a></li>
+                        <li><a href= "art.html">Art</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+        <main id="main-content">
+            <h1>Beauty</h1>
+            <h2>Pick a category</h2>
+            <p>I have sensitive skin. So I'll love it as long as it doesn't give me a rash, and hate it if it does 😭</p>
+           
+            <!-- <div class="marrykill-grid"> -->
+                <!-- <a href="marry.html" class="marrykillbox">
+                    <div>
+                        <h2 class="giant-emoji">💍</h2>
+                        <h3>Marry</h3>
+                        <p>Products I love</p>
+                    </div>
+                </a>
+                <a href="kill.html" class="marrykillbox">
+                    <div>
+                        <h2 class="giant-emoji">🪦</h2>
+                        <h3>Kill</h3>
+                        <p>Products I hate</p>
+                    </div>
+                </a>
+            </div> -->
+            
+            
+            <div class="filter-buttons">
+                <button data-filter="*">View All</button>
+                <button data-filter=".love">Marry</button>
+                <button data-filter=".hate">Kill</button>
+            </div>
+            <div class="grid">
+                <div class="grid-item love">
+                    <img src="images/summerfri.jpeg" alt="lip gloss with a red-orange shade">
+                    <h3>Summer Fridays Lip Gloss</h3>
+                    <p>I've never had a lip gloss or chapstick so moisturizing. The color is perfect too!</p>
+                </div>
+
+                <div class="grid-item love">
+                    <img src="images/aestura.jpeg" alt="lotion bottle with blue and white packaging">
+                    <h3>Aestura Cream</h3>
+                    <p> I've tried countless lotions and creams, this one is not too oily and not too watery, perfect for my combination skin.</p>
+                </div>
+
+                <div class="grid-item love">
+                    <img src="images/shiseido.png" alt="a sunscreen stick with blue packaging">
+                    <h3>Shiseido Sunscreen</h3>
+                    <p>No white cast and good for re-applying on the go without gettiing my fingers greasy.</p>
+                </div>
+
+                <div class="grid-item love">
+                    <img src="images/dior.png" alt="a bottle of foundation with a round bottle and silver cap">
+                    <h3>Dior Backstage Foundation</h3>
+                    <p>I have olive toned skin and foundations rarely come in this tint. Dior's 2WO (Warm Olive) is a perfect match so I'm sticking to it.</p>
+                </div>
+
+                <div class="grid-item hate">
+                    <img src="images/origins.jpeg" alt="small, translucent orange glass bottle with a white pump">
+                    <h3>Origins Ginzing Vitamin C Serum</h3>
+                    <p>This burns my eyes!! I think it's the strong orange smell that does it. Also, it broke me out. Never again will I touch this product.</p>
+                </div>
+                
+                <div class="grid-item hate">
+                    <img src="images/Saie.png" alt="tinted moisturizer in grey purple packaging">
+                    <h3>Saie Slip Tint</h3>
+                    <p>This smells musty, is extremely oily, and also broke me out. So sad.</p>
+                </div>
+
+                <div class="grid-item hate">
+                    <img src="images/cerave.webp" alt="lotion bottle with pump with blue and white packaging">
+                    <h3>Cerave Lotion</h3>
+                    <p>Someone recommended this to me because their dermatologist recommended it to them, but when I tried it I got these bumps all over my face.</p>
+                </div>
+
+                <div class="grid-item hate">
+                    <img src="images/burts.webp" alt="beeswax chapstick in orange packaging">
+                    <h3>Burt's Bees Chapstick</h3>
+                    <p>This made my lips soooooo flaky and nasty!</p>
+                </div>
+                
+            </div>
+            <footer>
+                <br>&mdash;updated April 17, 2024
+            </footer>
+        </main>
+        <script src="js/isotope.js"></script>
+    </body>
+</html>

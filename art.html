@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <title>Art</title>
+</head>
+<body>
+    <a href = "#main-content" class="skip">Skip to Main Content</a>
+    <header>
+
+        <nav>
+            <div class="topnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <script src="js/javascript.js"></script>
+                <div id="myLinks">
+                    <ul class="nav-item nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href= "fashion.html">Fashion</a></li>
+                        <li><a href= "beauty.html" >Beauty</a></li>
+                        <li><a href= "art.html" class="active">Art</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main id="main-content">
+        <h1>Art</h1>
+        <h2>My favorite artists</h2>
+        <p>Yay.</p>
+
+      <div class="art-grid">
+          <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="images/felix.jpeg" style="width:100%" alt="empty bed with two pillows that have head imprints">
+                <h3>Felix Gonzalez-Torres</h3>
+                <p>I spent some time researching this artist and read through his personal notes in the MoMA archives. Reading first hand accounts of what led him to make the work he did, and seeing the way he coped with loss in his artworks brought me to tears.</p>
+            </div>
+               
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="images/guimi.jpeg" style="width:100%" alt="purple, light green, hot pink landscape painting of mountains and water">
+                <h3>Guimi You</h3>
+                <p>Just like how I often listen to the music for the melody, not the lyrics, there are instances where I want to bask in the beauty of vibrant colors without overanalyzing the "depper meaning" in an artwork. Guimi's work has this calming radiance– it paints a dream world that I want to enter. Sometimes that’s all that it takes for a work to earn a special place in my mind.</p>
+
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="images/nancy.jpg" style="width:100%" alt="industrial looking tunnels with light shining through them">
+                <h3>Nancy Holt</h3>
+                <p>What made Nancy's work particularly cool was her blending of art and nature, creating large-scale environmental installations that played with light, shadow, and the natural landscape. Her most famous piece, "Sun Tunnels," consists of four massive concrete cylinders arranged in the desert of Utah, precisely aligned to frame the sun during the solstices. I think the merging of art with the environment pushes not only the boundaries of art, but how we might perceive the world around us. </p>
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="images/steph.jpeg" style="width:100%" alt="installation of pioneer dresses in greenscreen material and png grid pattern">
+                <h3>Stephanie Syjuco</h3>
+                <p>Stephanie Syjuco challenges notions of consumerism, globalization, and cultural identity. In Dodge and Burn,she weaves together sources as varied as protest imagery, digital masks and intricately sewn garments made of green-screen fabric, creating an installation that reveals how cultural identities and historical "truths" are actively constructed and perpetuated. </p>
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="images/wolfgang.jpeg" style="width:100%" alt="beautiful shot of a fly eating a cracked open king crab">
+                <h3>Wolfgang Tilmans</h3>
+                <p>I'm in awe of how Wolfgang Tillmans can take something as mundane as leftover food scraps or simply rolled up pieces of paper and transform them into stunning abstract photographs. His eye for finding beauty in the overlooked details of everyday life is what really draws me to his work. Tillmans has an incredible talent for making you pause and appreciate the artistic potential in the most unremarkable of objects and scenes. With his innovative approaches to materials and perspectives, even the most banal subjects take on a captivating, abstract quality under his lens. That ability to recontextualize and reimagine the familiar is what makes Tillmans' photography so distinctive and compelling to me. </p>
+            </div>
+          
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="images/jochen.jpg" style="width:100%" alt="painting that mimics the look of frosted glass with a stick figure finger drawing">
+                <h3>Jochen Muhlenbrink</h3>
+                <p>Jochen's latest series of works comprises paintings and mixed-media artworks that exist as a study of windows. is meticulously rendered oil on canvas pieces create a hyper-realistic illusion of frosted window panes. This body of work makes me feel nostalgic about my childhood, on cold days when I would doodle on the condensation-covered windows of the passenger seat.</p>
+            </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="images/felix.jpeg" onclick="currentSlide(1)" alt="Felix Gonzalez-Torres. “Untitled.” 1991. Billboard, dimensions vary with installation">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/guimi.jpeg" onclick="currentSlide(2)" alt="Guimi You. “Spring in the Forest.” 2023. Oil on linen, 57x76 in. (145 x 193 cm.) ">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/nancy.jpg" onclick="currentSlide(3)" alt="Nancy Holt. “Up and Under.” 1987-98. Sand, concrete, topsoil, grass, water, Mound: height ranges from 11 to 26 ft. (3.5 to 8 m), with a length of 630 ft. (192 m); Tunnels: length 241 ft. (74 m), with a diameter of 10 ft. (3 m)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/steph.jpeg" onclick="currentSlide(4)" alt="Stephanie Syjuco. “Dodge and Burn (Visible Storage).” 2019. Wooden platform, digital photos and printed vinyl on lasercut wood, chromakey fabric, printed backdrops, seamless paper, artificial plants, mixed media. Overall 20' x 17' x 8.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/wolfgang.jpeg" onclick="currentSlide(5)" alt="Wolfgang Tillmans “Astro Crusto, A.” 2012. 
+        Photographs, Framed C-print. 84 x 57 in. (213.4 x 144.8 cm.) ">
+              </div>
+
+              <div class="column">
+                <img class="demo cursor" src="images/jochen.jpg" onclick="currentSlide(6)" alt="Jochen Muhlenbrink “Existance.” 2019 50 x 40 cm Oil on canvas">
+              </div>
+            </div>
+          </div>
+
+
+    <footer><br>&mdash;updated April 17, 2024</footer>
+    </main>
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>
