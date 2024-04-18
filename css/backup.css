@@ -1,0 +1,66 @@
+/* MUSIC PAGE STYLING */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    position: relative; /* Ensure proper positioning */
+    z-index: 1; /* Ensure card is above other elements */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+}
+.flip-card-back {
+    background-color: #6f2344;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+div.music-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: solid 0;
+}
+
+.music-grid {
+    padding: 20px;
+}
+
+/* center the cards on the music page */
+div.music-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This will also center vertically */
+  }

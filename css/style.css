@@ -88,7 +88,7 @@ nav li {
 body{
     line-height: 1.4em;
     background-color: #EAEAEA;
-    margin: 2% 5% 10% 5%;
+    margin: 2% 20px 10% 20px;
 
     /* general font styling */
     color: #333333;
@@ -386,6 +386,81 @@ button:hover{
 
 
 
+
+/* MUSIC PAGE STYLING */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    position: relative; /* Ensure proper positioning */
+    z-index: 1; /* Ensure card is above other elements */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+}
+.flip-card-back {
+    background-color: #cc93ac;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+div.music-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: solid 0;
+}
+
+.music-grid {
+    padding: 20px;
+}
+
+/* center the cards on the music page */
+/* div.music-grid {
+    display: flex;
+    justify-content: center;
+  } */
+
+  div.music-grid {
+    display: grid;
+    justify-content: center;
+  }
+
+
+
+
 @media (min-width: 600px){
     .fashion-grid {
         display: grid;
@@ -414,7 +489,21 @@ button:hover{
     .art-grid{
         margin: 0px 100px 0px 100px;
       }
-}
+
+    div.music-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div.music-grid > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    
 
 
 
@@ -422,11 +511,6 @@ button:hover{
 /* DESKTOP VIEW          DESKTOP VIEW          DESKTOP VIEW          DESKTOP VIEW          */
 
 @media (min-width: 900px) {
-
-    /* make margins big for the art page so images are smaller */
-    .art-grid{
-        margin: 0px 150px 0px 150px;
-      }
 
     /* hides hamburger icon*/
     .topnav .icon {
@@ -467,12 +551,21 @@ button:hover{
         gap: 20px;
     }
 
+    /* make margins big for the art page so images are smaller */
+    .art-grid{
+        margin: 0px 150px 0px 150px;
+      }
+
     /* grid for makeup page */
     .grid-item {
         width: calc(25% - 10px);
     }
 
-}
+
+
+
+
+
 
 
 /* A media query to target users who prefer reduced motion */
@@ -483,3 +576,4 @@ button:hover{
         display: none;
     }
   }
+}
