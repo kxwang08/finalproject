@@ -409,6 +409,11 @@ button:hover{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* make margins big for the art page so images are smaller */
+    .art-grid{
+        margin: 0px 100px 0px 100px;
+      }
 }
 
 
@@ -420,7 +425,7 @@ button:hover{
 
     /* make margins big for the art page so images are smaller */
     .art-grid{
-        margin: 0px 100px 0px 100px;
+        margin: 0px 150px 0px 150px;
       }
 
     /* hides hamburger icon*/
